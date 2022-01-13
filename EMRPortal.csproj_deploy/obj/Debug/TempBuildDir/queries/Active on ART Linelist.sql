@@ -1,0 +1,1 @@
+select * from etl_art_master_list;

@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="EMRPortal.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EMR Data Warehouse</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/datepicker3.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="lib/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="lib/select2/css/select2.css" rel="stylesheet" type="text/css" />
+    <link href="lib/multiselect/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+    <!--Custom Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    <script src="lib/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="lib/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/chart.min.js" type="text/javascript"></script>
+    <script src="js/chart-data.js" type="text/javascript"></script>
+    <script src="js/easypiechart.js" type="text/javascript"></script>
+    <script src="js/easypiechart-data.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="lib/select2/js/select2.js" type="text/javascript"></script>
+    <script src="lib/multiselect/bootstrap-multiselect.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>EMR</span>Portal</a>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+    <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+        <div class="profile-sidebar">
+            <div class="profile-userpic">
+                <img src="http://placehold.it/50/30a5ff/fff?text=User" class="img-responsive" alt="">
+            </div>
+            <div class="profile-usertitle">
+                <div class="profile-usertitle-name">
+                    <asp:Label ID="lblUsername" runat="server" Text="Username"></asp:Label>
+                </div>
+                <div class="profile-usertitle-status">
+                    <span class="indicator label-success"></span>Online</div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="divider">
+        </div>
+        <ul class="nav menu">
+            <li><a href="home.aspx"><em class="fa fa-dashboard">&nbsp;</em> General</a></li>
+            <li><a href="home.aspx?cat=hts"><em class="fa fa-calendar">&nbsp;</em> HTS</a></li>
+            <li><a href="home.aspx?cat=hiv"><em class="fa fa-bar-chart">&nbsp;</em> HIV</a></li>
+            <li><a href="home.aspx?cat=pmtct"><em class="fa fa-toggle-off">&nbsp;</em> PMTCT</a></li>
+            <li><a href="home.aspx?cat=prep"><em class="fa fa-clone">&nbsp;</em> PrEP</a></li>
+        </ul>
+        <div class="divider">
+        </div>
+        <ul class="nav menu">
+            <li><a href="changepass.aspx"><em class="fa fa-user">&nbsp;</em> Change Password</a></li>
+            <li><a href="logout.aspx"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+        </ul>
+    </div>
+    <!--/.sidebar-->
+    <form id="form1" runat="server">
+    <div class="row">
+        <div class="col-md-12">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+        </div>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-lg-12" runat="server" id="divErrorMsg">
+                    <asp:Literal ID="litErrorMsg" runat="server"></asp:Literal>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <!--/.main-->
+    </form>
+</body>
+</html>

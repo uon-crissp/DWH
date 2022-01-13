@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMRPortal", "EMRPortal\EMRPortal.csproj", "{47C9744D-E098-45D3-8F5B-1F69F8211000}"
+EndProject
+Project("{2CFEAB61-6A3B-4EB8-B523-560B4BEEF521}") = "EMRPortal.csproj_deploy", "EMRPortal.csproj_deploy\EMRPortal.csproj_deploy.wdproj", "{15AFB070-A50A-4748-8FD9-9DE1B7AAFD07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47C9744D-E098-45D3-8F5B-1F69F8211000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C9744D-E098-45D3-8F5B-1F69F8211000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C9744D-E098-45D3-8F5B-1F69F8211000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C9744D-E098-45D3-8F5B-1F69F8211000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AFB070-A50A-4748-8FD9-9DE1B7AAFD07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AFB070-A50A-4748-8FD9-9DE1B7AAFD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AFB070-A50A-4748-8FD9-9DE1B7AAFD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AFB070-A50A-4748-8FD9-9DE1B7AAFD07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

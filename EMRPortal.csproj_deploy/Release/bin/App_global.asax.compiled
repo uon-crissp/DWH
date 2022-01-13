@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/EMRPortal.csproj/global.asax" hash="1413d0e4" filehash="1e929c2773d9" flags="150000" assembly="EMRPortal.csproj_deploy" type="ASP.global_asax">
+  <filedeps>
+    <filedep name="/EMRPortal.csproj/global.asax" />
+  </filedeps>
+</preserve>
